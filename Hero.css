@@ -1,0 +1,118 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family:
+    system-ui,
+    -apple-system,
+    Segoe UI,
+    Roboto,
+    Arial,
+    sans-serif;
+  background-color: #fff;
+  color: #111;
+}
+
+
+.hero {
+
+
+  height: calc(100vh - 0px); 
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  margin: 0;
+  padding: 0;
+
+}
+
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  
+  z-index: 0;
+}
+
+
+.hero > *:not(.bg-video) {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 60px;
+}
+
+.hero::before {
+  position: absolute;
+
+
+.hero h1 {
+  font-size: 60px;
+  font-weight: 800;
+  margin-bottom: 12px;
+  letter-spacing: -1px;
+  max-width: 750px;
+}
+
+
+.hero p {
+  font-size: 14px;
+  font-weight: 500;
+  opacity: 0.85;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  max-width: 600px;
+}
+.bg-video {
+  position: absolute;
+  padding: 50px;
+  top: 0;
+  left: 50%;
+  width: 100vw;
+  height: 100%;
+  transform: translateX(-50%);
+  object-fit: cover;
+  z-index: -1;
+}
+
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 120px 25px;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+  }
+
+  .hero p {
+    font-size: 12px;
+    letter-spacing: 1.5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 34px;
+  }
+
+  .hero p {
+    font-size: 11px;
+  }
+}
+}

@@ -1,0 +1,50 @@
+/* global reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  height: 70px;
+  background-color: #fff;
+  position: relative;
+}
+
+/* Logo - Left */
+.logo {
+  flex: 1;
+}
+
+/* Nav Links - Center */
+.nav-links {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+/* Button - Right */
+.btn {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn button {
+  padding: 10px 18px;
+  border: none;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}

@@ -1,0 +1,37 @@
+.about {
+  padding: 80px 60px;
+}
+
+.about__wrap {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.about__content h2 {
+  font-size: 34px;
+  margin-bottom: 12px;
+}
+
+.about__content p {
+  font-size: 16px;
+  line-height: 1.7;
+  opacity: 0.9;
+}
+
+.about__image img {
+  width: 100%;
+  border-radius: 14px;
+  /* display: block; */
+}
+
+@media (max-width: 900px) {
+  .about {
+    padding: 60px 20px;
+  }
+
+  .about__wrap {
+    grid-template-columns: 1fr;
+  }
+}

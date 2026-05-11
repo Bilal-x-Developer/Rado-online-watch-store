@@ -1,0 +1,38 @@
+.services {
+  padding: 80px 60px;
+  background: #f8f8f8;
+}
+
+.services__wrap {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.services__content h2 {
+  font-size: 34px;
+  margin-bottom: 12px;
+}
+
+.services__content p {
+  font-size: 16px;
+  line-height: 1.7;
+  opacity: 0.9;
+}
+
+.services__image img {
+  width: 100%;
+  border-radius: 14px;
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .services {
+    padding: 60px 20px;
+  }
+
+  .services__wrap {
+    grid-template-columns: 1fr;
+  }
+}
